@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Expense App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="section">
+        <div class="header">
+        <h1>Income and Expense App</h1>
+            </div>
+        <div class="totals">
+            <p>Income Available: <span id="total-income"><span style="color:rgb(224, 91, 14)">0</span></span></p>
+            <p>Expenses : <span id="total-expenses"><span style="color:rgb(224, 91, 14)">0</span></span></p>
+            <p>Net Balance: <span id="net-balance"><span style="color:rgb(224, 91, 14)">0</span></span></p>
+        </div>
+        <div class="entry-form">
+            <input type="text" id="description" placeholder="Please Enter Description">
+            <input type="number" id="amount" placeholder=" Enter Amount">
+        </div>
+            <div class="filters">
+                <label><input type="radio" name="filter" value="all" >All</label>
+                <label><input type="radio" name="filter" value="income"  checked>Income</label>
+                <label><input type="radio" name="filter" value="expense">Expense</label>
+            </div>
+            <div class="btn">
+            <button id="add-btn">Add Entry</button>
+            <button id="reset-btn">Clear</button>
+    </div>
+        <ul id="entries"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
